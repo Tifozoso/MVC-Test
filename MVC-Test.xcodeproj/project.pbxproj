@@ -12,6 +12,9 @@
 		3CDFC5111F8453F8005E8468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDFC50F1F8453F8005E8468 /* Main.storyboard */; };
 		3CDFC5131F8453F8005E8468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDFC5121F8453F8005E8468 /* Assets.xcassets */; };
 		3CDFC5161F8453F8005E8468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDFC5141F8453F8005E8468 /* LaunchScreen.storyboard */; };
+		3CDFC5221F8454E3005E8468 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFC5211F8454E3005E8468 /* Person.swift */; };
+		3CDFC5241F845BFB005E8468 /* toby-keith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CDFC5231F845BFB005E8468 /* toby-keith.jpg */; };
+		3CDFC5261F846FE3005E8468 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFC5251F846FE3005E8468 /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3CDFC5121F8453F8005E8468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CDFC5151F8453F8005E8468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CDFC5171F8453F8005E8468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDFC5211F8454E3005E8468 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3CDFC5231F845BFB005E8468 /* toby-keith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "toby-keith.jpg"; sourceTree = "<group>"; };
+		3CDFC5251F846FE3005E8468 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		3CDFC50A1F8453F8005E8468 /* MVC-Test */ = {
 			isa = PBXGroup;
 			children = (
-				3CDFC50B1F8453F8005E8468 /* AppDelegate.swift */,
-				3CDFC50D1F8453F8005E8468 /* ViewController.swift */,
+				3CDFC51D1F845442005E8468 /* Model */,
+				3CDFC51E1F84544E005E8468 /* View */,
+				3CDFC51F1F845453005E8468 /* Controller */,
+				3CDFC5201F845498005E8468 /* Rescources */,
 				3CDFC50F1F8453F8005E8468 /* Main.storyboard */,
+				3CDFC50B1F8453F8005E8468 /* AppDelegate.swift */,
 				3CDFC5121F8453F8005E8468 /* Assets.xcassets */,
 				3CDFC5141F8453F8005E8468 /* LaunchScreen.storyboard */,
 				3CDFC5171F8453F8005E8468 /* Info.plist */,
 			);
 			path = "MVC-Test";
+			sourceTree = "<group>";
+		};
+		3CDFC51D1F845442005E8468 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CDFC5211F8454E3005E8468 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3CDFC51E1F84544E005E8468 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CDFC5251F846FE3005E8468 /* RoundedImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3CDFC51F1F845453005E8468 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CDFC50D1F8453F8005E8468 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3CDFC5201F845498005E8468 /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
+				3CDFC5231F845BFB005E8468 /* toby-keith.jpg */,
+			);
+			name = Rescources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CDFC5161F8453F8005E8468 /* LaunchScreen.storyboard in Resources */,
+				3CDFC5241F845BFB005E8468 /* toby-keith.jpg in Resources */,
 				3CDFC5131F8453F8005E8468 /* Assets.xcassets in Resources */,
 				3CDFC5111F8453F8005E8468 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDFC5261F846FE3005E8468 /* RoundedImageView.swift in Sources */,
+				3CDFC5221F8454E3005E8468 /* Person.swift in Sources */,
 				3CDFC50E1F8453F8005E8468 /* ViewController.swift in Sources */,
 				3CDFC50C1F8453F8005E8468 /* AppDelegate.swift in Sources */,
 			);
