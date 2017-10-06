@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
 
     @IBOutlet weak var fullName: UILabel!
+    @IBOutlet weak var renameField: UILabel!
+    
+    weak var renamePressed: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,8 @@ class ViewController: UIViewController {
         
     
         
+    }
+    @IBAction func buttonPressed(_ sender: Any) {
     }
 
 }

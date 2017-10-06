@@ -12,8 +12,15 @@ class Person {
     private var _firstName: String!
     private var _lastName: String!
     
-    var firstName: String {
-        return _firstName
+    var firstName: String! {
+        get {
+            return _firstName
+        }
+        set {
+            if newValue == nil && newValue == "" {
+                _firstName = newValue
+            }
+        }
     }
     
     var lastName: String {
